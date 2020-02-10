@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<meta charset="utf-8" />
+<!-- <link rel="stylesheet" href="chrome://global/skin/in-content/common.css" /> -->
+<!-- <link rel="stylesheet" href="options.css" /> -->
+
+<form id="options-form">
+	<p>Default App behaviour:</p>
+	<label>
+		<input
+			type="radio"
+			name="defaultBehaviour"
+			onclick="handleClick(this)"
+			value="doNothing"
+		/>
+		Do nothing (standard browser behaviour)
+	</label>
+	<br />
+	<label>
+		<input
+			type="radio"
+			name="defaultBehaviour"
+			onclick="handleClick(this)"
+			value="disableAutocomplete"
+		/>
+		Disable autocomplete
+	</label>
+	<br />
+	<label>
+		<input
+			type="radio"
+			name="defaultBehaviour"
+			onclick="handleClick(this)"
+			value="forceEnableAutocomplete"
+		/>
+		Force enable autocomplete
+	</label>
+	<br />
+	<span class="selected-value"></span>
+	<span class="error"></span>
+</form>
+
+<script src="browser-polyfill.min.js"></script>
+<script src="options.js"></script>

@@ -1,0 +1,31 @@
+{
+	"name": "Autocomplete Control",
+	"version": "1.0.0",
+	"author": "Ihor Kopach <igor@kopach.dev> (https://kopach.dev)",
+	"description": "Disable/enable browser autocomplete on your need",
+	"homepage_url": "https://github.com/kopach/autocomplete-control",
+	"manifest_version": 2,
+	"minimum_chrome_version": "74",
+	"applications": {
+		"gecko": {
+			"id": "autocomplete-control@kopach.dev",
+			"strict_min_version": "67.0"
+		}
+	},
+	"icons": {
+		"128": "icon128.png"
+	},
+	"permissions": ["storage"],
+	"options_ui": {
+		"chrome_style": true,
+		"page": "options.html"
+	},
+
+	"content_scripts": [
+		{
+			"js": ["content_script.js"],
+			"matches": ["http://*/*", "https://*/*"],
+			"run_at": "document_start"
+		}
+	]
+}

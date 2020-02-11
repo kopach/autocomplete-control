@@ -2,7 +2,7 @@
 	"name": "Autocomplete Control",
 	"version": "1.0.0",
 	"author": "Ihor Kopach <igor@kopach.dev> (https://kopach.dev)",
-	"description": "Disable/enable browser autocomplete on your need",
+	"description": "Control (Disable/enforce) browser autocomplete on your need",
 	"homepage_url": "https://github.com/kopach/autocomplete-control",
 	"manifest_version": 2,
 	"minimum_chrome_version": "74",

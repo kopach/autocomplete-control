@@ -2,10 +2,6 @@
   "private": true,
   "author": "Ihor Kopach <igor@kopach.dev> (https://kopach.dev)",
   "scripts": {
-    "__prerelease:source-url": "if [ ! -z \"${TRAVIS_REPO_SLUG}\" ]; then echo https://github.com/$TRAVIS_REPO_SLUG/tree/\"${TRAVIS_TAG:-$TRAVIS_COMMIT}\" > dist/SOURCE_URL; fi",
-    "__prerelease:version": "VERSION=$(utc-version); echo $VERSION; dot-json dist/manifest.json version $VERSION",
-    "__release": "npm-run-all build prerelease:* release:*",
-    "__release:amo": "web-ext-submit --source-dir dist",
     "__release:cws": "webstore upload --source=dist --auto-publish",
     "__test": "",
     "_watch": "webpack --mode=development --watch",
@@ -16,6 +12,11 @@
     "lint-package.json": "prettier-package-json --list-different",
     "lint:css": "stylelint src/**/*.css",
     "lint:ts": "tslint --project tsconfig.json --config tslint.json",
+    "release": "npm-run-all build prerelease:* release:*",
+    "release:amo": "web-ext-submit --source-dir dist",
+    "prerelease:source-url": "if [ ! -z \"${TRAVIS_REPO_SLUG}\" ]; then echo https://github.com/$TRAVIS_REPO_SLUG/tree/\"${TRAVIS_TAG:-$TRAVIS_COMMIT}\" > dist/SOURCE_URL; fi",
+    "prerelease:version": "VERSION=$(utc-version); echo $VERSION; dot-json dist/manifest.json version $VERSION",
+    "prettier-package-json": "prettier-package-json --write",
     "watch:android": "TARGET_BROWSER_PARAMS='--target firefox-android' npm run _watch:browser",
     "watch:chromium": "TARGET_BROWSER_PARAMS='--target chromium' npm run _watch:browser",
     "watch:firefox": "TARGET_BROWSER_PARAMS='--target firefox-desktop' npm run _watch:browser"

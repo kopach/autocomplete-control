@@ -32,7 +32,7 @@ module.exports = {
 			{
 				from: '**/*',
 				context: 'src',
-				ignore: '*.js',
+				ignore: ['*.js'],
 			},
 			{
 				from: 'node_modules/webextension-polyfill/dist/browser-polyfill.min.js'

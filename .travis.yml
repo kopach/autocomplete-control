@@ -3,7 +3,7 @@ node_js:
   - stable
 env:
    # Extension ID assigned by the Chrome Web Store
-  - EXTENSION_ID='000000000000000000000000000000000'
+  - EXTENSION_ID='obadmbiiipafnncogfkdfionggeckfia'
 deploy:
   - provider: script
     skip_cleanup: true

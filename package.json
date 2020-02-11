@@ -2,7 +2,6 @@
   "private": true,
   "author": "Ihor Kopach <igor@kopach.dev> (https://kopach.dev)",
   "scripts": {
-    "__release:cws": "webstore upload --source=dist --auto-publish",
     "__test": "",
     "_watch": "webpack --mode=development --watch",
     "_watch:browser": "concurrently --raw --kill-others \"npm run  _watch\" \"web-ext run --source-dir=dist $TARGET_BROWSER_PARAMS\"",
@@ -14,6 +13,7 @@
     "lint:ts": "tslint --project tsconfig.json --config tslint.json",
     "release": "npm-run-all build prerelease:* release:*",
     "release:amo": "web-ext-submit --source-dir dist",
+    "release:cws": "webstore upload --source=dist --auto-publish",
     "prerelease:source-url": "if [ ! -z \"${TRAVIS_REPO_SLUG}\" ]; then echo https://github.com/$TRAVIS_REPO_SLUG/tree/\"${TRAVIS_TAG:-$TRAVIS_COMMIT}\" > dist/SOURCE_URL; fi",
     "prerelease:version": "VERSION=$(utc-version); echo $VERSION; dot-json dist/manifest.json version $VERSION",
     "prettier-package-json": "prettier-package-json --write",

@@ -3,7 +3,7 @@ import optionsStorage, {
 	UserSettings,
 } from './options-storage';
 
-window.addEventListener('load', populateAutocompleteSetup, false);
+populateAutocompleteSetup();
 
 async function populateAutocompleteSetup(): Promise<void> {
 	const { defaultBehaviour }: UserSettings = await optionsStorage.getAll();

@@ -24,6 +24,7 @@
     "watch-all": "run-p watch:*",
     "watch:brave": "TARGET_BROWSER_PARAMS='-t chromium --chromium-binary ~/Applications/Brave\\ Browser.app/Contents/MacOS/Brave\\ Browser' npm run _watch:browser",
     "watch:chromium": "TARGET_BROWSER_PARAMS='--target chromium' npm run _watch:browser",
+    "watch:edge": "TARGET_BROWSER_PARAMS='-t chromium --chromium-binary /Applications/Microsoft\\ Edge.app/Contents/MacOS/Microsoft\\ Edge' npm run _watch:browser",
     "watch:firefox": "TARGET_BROWSER_PARAMS='--target firefox-desktop' npm run _watch:browser",
     "watch:opera": "TARGET_BROWSER_PARAMS='-t chromium --chromium-binary ~/Applications/Opera.app/Contents/MacOS/Opera' npm run _watch:browser"
   },

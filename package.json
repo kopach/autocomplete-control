@@ -2,6 +2,7 @@
   "private": true,
   "author": "Ihor Kopach <igor@kopach.dev> (https://kopach.dev)",
   "scripts": {
+    "__release:opera": "node ./scripts/publish-opera.js",
     "__test": "",
     "__watch:android": "TARGET_BROWSER_PARAMS='--target firefox-android' npm run _watch:browser",
     "_prerelease:opera": "web-ext build --overwrite-dest --source-dir dist --artifacts-dir dist/web-ext-artifacts",
@@ -17,7 +18,6 @@
     "release": "npm-run-all build prerelease:* release:*",
     "release:amo": "web-ext-submit --source-dir dist",
     "release:cws": "webstore upload --source=dist --auto-publish",
-    "release:opera": "node ./scripts/publish-opera.js",
     "prerelease:source-url": "if [ ! -z \"${TRAVIS_REPO_SLUG}\" ]; then echo https://github.com/$TRAVIS_REPO_SLUG/tree/\"${TRAVIS_TAG:-$TRAVIS_COMMIT}\" > dist/SOURCE_URL; fi",
     "prerelease:version": "VERSION=$(utc-version); echo $VERSION; dot-json dist/manifest.json version $VERSION",
     "prettier-package-json": "prettier-package-json --write",

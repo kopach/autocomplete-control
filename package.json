@@ -59,7 +59,7 @@
     "tslint-plugin-prettier": "2.1.0",
     "typescript": "3.7.3",
     "upload-opera-extension": "1.0.3",
-    "utc-version": "2.0.1",
+    "utc-version": "2.0.2",
     "web-ext": "^4.1.0",
     "web-ext-submit": "^4.1.0",
     "webpack": "4.36.1",

@@ -1,3 +1,5 @@
+[![#StandWithUkraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner2-direct.svg)](https://github.com/vshymanskyy/StandWithUkraine#readme)
+
 # Autocomplete Control
 
 ⭐️ Please, star me on [GitHub](https://github.com/kopach/autocomplete-control) — it helps!

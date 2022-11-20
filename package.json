@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "webext-options-sync": "1.2.1",
-    "webextension-polyfill": "0.4.0"
+    "webextension-polyfill": "0.10.0"
   },
   "devDependencies": {
     "@types/firefox-webext-browser": "70.0.1",

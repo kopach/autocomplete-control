@@ -29,7 +29,7 @@
     "watch:opera": "TARGET_BROWSER_PARAMS='-t chromium --chromium-binary ~/Applications/Opera.app/Contents/MacOS/Opera' npm run _watch:browser"
   },
   "dependencies": {
-    "webext-options-sync": "1.2.1",
+    "webext-options-sync": "1.2.4",
     "webextension-polyfill": "0.4.0"
   },
   "devDependencies": {

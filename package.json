@@ -63,7 +63,7 @@
     "web-ext": "^4.1.0",
     "web-ext-submit": "^4.1.0",
     "webpack": "4.36.1",
-    "webpack-cli": "3.3.6"
+    "webpack-cli": "3.3.12"
   },
   "husky": {
     "hooks": {

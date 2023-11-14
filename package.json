@@ -62,7 +62,7 @@
     "utc-version": "2.0.1",
     "web-ext": "^4.1.0",
     "web-ext-submit": "^4.1.0",
-    "webpack": "4.36.1",
+    "webpack": "4.47.0",
     "webpack-cli": "3.3.6"
   },
   "husky": {

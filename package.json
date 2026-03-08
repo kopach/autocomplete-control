@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@types/firefox-webext-browser": "70.0.1",
-    "chrome-webstore-upload-cli": "1.2.0",
+    "chrome-webstore-upload-cli": "1.2.2",
     "codelyzer": "5.2.0",
     "concurrently": "^5.0.1",
     "copy-webpack-plugin": "5.1.1",
